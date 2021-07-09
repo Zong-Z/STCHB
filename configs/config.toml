@@ -1,0 +1,19 @@
+[bot]
+webhook = "{WEBHOOK}" # If the field is empty(""), the bot starts using "Polling".
+token = "{TOKEN}" # Telegram bot token.
+port = "8090" # If you wont to change this bot port, you also need change bot port in "docker-compose.yml".
+administrator_password_sha256 = "{SHA256}" # SHA256 hash of your password should be here.
+    [bot.polling]
+    offset = 0
+    limit = 0
+    timeout = 60
+
+[database]
+    [database.redis]
+    addr = "redis:6379"
+    password = ""
+    db = 0
+
+[chat]
+queue = 10 # Maximum number of users in the queue.
+users = 2 # Number of users in one chat.

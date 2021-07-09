@@ -1,0 +1,42 @@
+{
+  "commands": {
+    "start": {
+      "command": "start",
+      "text": "This is a simple telegram chat bot (STCHB), written in Go (Golang) for a fun using \"Go Telegram Bot API\". For help \"/help\"."
+    },
+    "help": {
+      "command": "help",
+      "text": "This is a simple telegram chat bot, written in Go(Golang) for a fun using \"Go Telegram Bot API\".\n\n⚙You can setting up your age, city or interlocutor - \"/settings\".\n\n\uD83D\uDCAC\"/start_chatting\" - to start a conversation with a random person.\n\uD83D\uDCAC\"/stop_chatting\" - to stop a conversation.\n\n\uD83D\uDCC1\"/me\" - to see information about yourself."
+    },
+    "chatting": {
+      "start": "start_chatting",
+      "stop": "stop_chatting"
+    },
+    "settings": {
+      "command": "settings"
+    },
+    "me": {
+      "command": "me"
+    },
+    "become_administrator": {
+      "command": "become_administrator"
+    },
+    "unknown": {
+      "text": "<strong>UNKNOWN MESSAGE<strong> \"/help\"."
+    }
+  },
+  "parse_mode": "HTML",
+  "chat": {
+    "not_registered": "<strong>YOU ARE NOT REGISTERED. USE</strong> \"/start\".",
+    "interlocutor_search_begun": "<strong>THE SEARCH FOR THE INTERLOCUTOR HAS BEGUN...</strong>",
+    "chat_found": "<strong>CHAT FOUND</strong>",
+    "already_in_chat": "<strong>YOU ARE ALREADY IN CHAT.</strong>",
+    "not_in_chat": "<strong>YOU ARE NOT IN THE CHAT YET...</strong>",
+    "chat_ended": "<strong>CHAT ENDED</strong>"
+  },
+  "inline_keyboard_markup": {
+    "opened": "Opened",
+    "changed": "Changed",
+    "closed": "Closed"
+  }
+}

@@ -1,0 +1,56 @@
+# STCHB - Simple chat-bot (Status - `in development`)
+
+[![CodeFactor](https://www.codefactor.io/repository/github/zong-z/stchb/badge)](https://www.codefactor.io/repository/github/zong-z/stchb)
+
+**STCHB** - is a simple Telegram chat-bot written in Go (Golang) for a fun, using "[Go Telegram Bot API](https://github.com/go-telegram-bot-api/telegram-bot-api)"
+
+![Gopher image](https://golang.org/doc/gopher/fiveyears.jpg)
+*Gopher image by [Renee French][rf], licensed under [Creative Commons 3.0 Attributions license][cc3-by].*
+
+## Downloads
+
+Go to [releases page](https://github.com/Zong-Z/stchb/releases) for details.
+
+### Run
+
+1) You need to install [Docker](https://docs.docker.com/get-docker) and [Docker Compose](https://docs.docker.com/compose/install)
+2) Open Terminal
+3) `cd <folder with the project>/stchb`
+4) Setting up configs [`configs.toml`](https://github.com/Zong-Z/stchb/blob/master/configs/config.toml)
+5) `docker-compose up -d --build --remove-orphans`
+
+### Development
+
+#### Prerequisites
+
+- Recommended IDEs
+  - [JetBrains GoLand IDE](https://www.jetbrains.com/go) (2020.2.2 and above)
+  - [Visual Studio Code](https://code.visualstudio.com) (1.48 and above)
+- [Go (Golang)](https://golang.org/dl)
+
+#### Dependencies
+
+- [Golang Telegram Bot API](https://github.com/go-telegram-bot-api/telegram-bot-api)
+  - `go get -u github.com/go-telegram-bot-api/telegram-bot-api`
+- [Redis client for Golang](https://github.com/go-redis/redis)
+  - `go get github.com/go-redis/redis/v8`
+- [Go package for UUIDs](https://github.com/google/uuid)
+  - `go get github.com/google/uuid`
+- [Go library for the TOML format](https://github.com/pelletier/go-toml)
+  - `go get github.com/pelletier/go-toml`
+
+## TODO
+
+- [x] Opportunity to choose a city and age.
+
+- [x] Ability to send photos, videos and documents to chat.
+
+- [x] CLI.
+
+## Contributions
+
+If you have **questions**, **ideas** or you find a **bug**, you can create an [issue](https://github.com/Zong-Z/stchb/issues) and it will be reviewed. If you want to contribute to the source code, fork this repository (`master`), realize your ideas and then create a new pull request. **Feel free!**
+
+## License
+
+Developed by **Zong-Z (Nazar)** as open source software under the [MIT License](https://github.com/Zong-Z/stchb/blob/master/LICENSE).
